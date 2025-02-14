@@ -5,8 +5,9 @@
 
 # 示例
 
-![avatar](https://github.com/kaiwang0112006/japan_quiz_ans/blob/master/images/demo1_ans.png)
-![avatar](https://github.com/kaiwang0112006/japan_quiz_ans/blob/master/images/demo2_ans.png)
+![avatar](https://github.com/kaiwang0112006/japan_quiz_ans/blob/main/images/demo1_ans.png)
+
+![avatar](https://github.com/kaiwang0112006/japan_quiz_ans/blob/main/images/demo2_ans.png)
 
 # 文件说明
 
