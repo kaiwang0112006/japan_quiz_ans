@@ -92,7 +92,7 @@ examples = [
 
 demo = gr.ChatInterface(
     fn=model_inference,
-    description="# **Deepseek-R1 & Qwen2.5-VL-7B-Instruct Janpanese Quiz ssistent**",
+    description="# **Deepseek-R1 & Qwen2.5-VL-7B-Instruct Janpanese Quiz assistant**",
     examples=examples,
     textbox=gr.MultimodalTextbox(label="Query Input", file_types=["image"],value="请解答一下日语题，给出答案和解题思路：", file_count="multiple"),
     stop_btn="Stop Generation",

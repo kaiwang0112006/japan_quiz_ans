@@ -88,7 +88,7 @@ demo = gr.Interface(model_inference,
                   outputs=[gr.Textbox(label="AI解题", lines=2, show_copy_button=True),
                            # gr.Image(label="Output Image")
                            ],
-                  title="Deepseek-R1 & Qwen2.5-VL-7B-Instruct Janpanese Quiz ssistent"
+                  title="Deepseek-R1 & Qwen2.5-VL-7B-Instruct Janpanese Quiz assistant"
                   )
 
 demo.launch(debug=True)
