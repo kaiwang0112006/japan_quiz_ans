@@ -1,8 +1,8 @@
 import gradio as gr
-from transformers import Qwen2VLForConditionalGeneration, AutoProcessor, TextIteratorStreamer, AutoTokenizer, AutoModelForCausalLM
-from transformers.image_utils import load_image
-from threading import Thread
-import time
+#from transformers import Qwen2VLForConditionalGeneration, AutoProcessor, TextIteratorStreamer, AutoTokenizer, AutoModelForCausalLM
+#from transformers.image_utils import load_image
+#from threading import Thread
+#import time
 from openai import OpenAI
 import base64
 import os
