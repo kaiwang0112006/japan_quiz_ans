@@ -5,6 +5,7 @@ from threading import Thread
 import time
 from openai import OpenAI
 import base64
+import os
 
 def model_inference(image_file):
 
@@ -21,7 +22,7 @@ def model_inference(image_file):
 
     # Apply chat template and process inputs
     ocrclient = OpenAI(
-        api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxx",  # MODELSCOPE_SDK_TOKEN, 请替换成您的ModelScope SDK Token
+        api_key=os.getenv("MODELSCOPE_API_KEY"),  # MODELSCOPE_SDK_TOKEN, 请替换成您的ModelScope SDK Token
         base_url="https://api-inference.modelscope.cn/v1"
     )
 
@@ -32,10 +33,10 @@ def model_inference(image_file):
             "role": "user",
             "content": [
                 *[{'type': 'image_url',
-                   'image_url': {
-                   'url':f"data:image/jpeg;base64,{image}",
-                   },
-        }         for image in images],
+                    'image_url': {
+                           'url': f"data:image/jpeg;base64,{image}",
+                    },
+                   } for image in images],
                 {"type": "text", "text": "提取图片中的文本，只输出文本内容"},
             ],
         }
@@ -49,7 +50,7 @@ def model_inference(image_file):
 
     client = OpenAI(
         base_url='https://api-inference.modelscope.cn/v1/',
-        api_key='37e69a2d-cfed-4c54-88de-7074c5c2c39c',  # ModelScope Token
+        api_key=os.getenv("MODELSCOPE_API_KEY"),  # ModelScope Token
     )
 
     response = client.chat.completions.create(

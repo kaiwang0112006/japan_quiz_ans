@@ -3,6 +3,12 @@
 调用 **Qwen2.5-VL-7B-Instruct** 和 **Deepseek-R1** 两个大模型，前者实现图片OCR，获取图片中的日语题目文本，后者
 进行答题解题。
 
+# 环境变量
+
+```shell
+export MODELSCOPE_API_KEY="YOU MODELSCOPE API KEY"
+```
+
 # 示例
 
 ![avatar](https://github.com/kaiwang0112006/japan_quiz_ans/blob/main/images/demo1_ans.png)
